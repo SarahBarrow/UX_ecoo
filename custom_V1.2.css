@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html,
+body {
+    width: 100%;
+    height: 100%; 
+	position: relative;
+}
+.container {
+	max-width: 970px; 
+	}
+.content{
+	background-color:#337ab7;
+	color:#ffffff;
+	text-align: center;
+	}
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background:url(imgs/fotolia_57776117.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	color: #ffffff;
+	text-shadow: 3px 3px 2px #93A396;
+}
+.userStories{
+	width: 100%;
+	height: auto !important;
+	background: url(imgs/fotolia_64285595.jpg) no-repeat center center scroll;
+	background-size: cover;
+	color:#ffffff;
+	text-align: center;
+	padding-top: 30px; 
+	}
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+	vertical-align: middle;
+}
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+	 color: #ffffff;
+}
+.about{
+	padding-top: 30px; 
+	}
+.partners {
+	padding-top:30px; 
+	padding-bottom:50px; 
+	}
+.partnersItem {
+	padding: 15px; 
+	}
+	
+/* flexslider caption settings source = http://stackoverflow.com
+/questions/15578312/flexslider-captions-showing-below-not-on-top-of-image*/
+
+/*.flexslider .slides li {
+    position:relative;
+}*/
+/*.flex-caption {
+    position: relative;
+    left:5;
+	right:5;
+	bottom:0;
+    background:rgba(0, 0, 0,0.6);
+    z-index:1;
+	padding:10px;
+ }*/
+.flex-caption {
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(255,255,255,0.40);      
+    z-index:1;
+    padding:5px;
+	color: #fff;
+}
+.flex-viewport {
+	height: 50%; 
+	width: 100%; 
+	}
+.flexslider {
+	controlNav: false; 
+	}
+
+.userItems {
+	padding-top: 80px; 
+	}
+footer {
+	padding: 100px; 
+	}
+.navbar-default {
+	background-color:rgba(89,123,98,0.60);
+	}
