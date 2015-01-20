@@ -96,6 +96,35 @@ body {
     padding:5px;
 	color: #fff;
 }
+.flex-test {
+	color:rgba(203,42,45,1.00); 
+	bottom:250px;
+    font-size: 40px;
+	font-family:montserrat, sans-serif; 
+    line-height: 350px;
+    left:0;
+    padding:0 20px;
+	padding-left:100px;
+    position:absolute;
+    right:0;
+    text-transform: uppercase;
+    /*z-index:1;*/
+	}
+.flex-test2 {
+	color:#ffffff; 
+	bottom:50px;
+    font-size: 40px;
+	font-family:montserrat, sans-serif; 
+/*    line-height: 350px;
+*/    left:0;
+    padding:0 20px;
+	padding-left:100px;
+    position:absolute;
+    right:0;
+    text-transform: uppercase;
+    /*z-index:1;*/
+	}
+	
 .flex-viewport {
 	height: 50%; 
 	width: 100%; 
