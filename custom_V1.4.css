@@ -6,21 +6,30 @@ body {
     width: 100%;
     height: 100%; 
 	position: relative;
+	font-family: open-sans, sans-serif;
 }
 .container {
 	max-width: 970px; 
 	}
 .content{
-	background-color:#337ab7;
-	color:#ffffff;
-	text-align: center;
+	background-color:#ffffff;
+	text-align: center; 
+	}
+/*.content img {
+	width: 100%;
+	}*/
+.test {
+	background-color:#ffffff;
+	}
+.test img{
+	max-width: 8%;
 	}
 .header {
     display: table;
     position: relative;
     width: 100%;
     height: 100%;
-    background:url(imgs/fotolia_57776117.jpg) no-repeat center center scroll;
+    background:url(imgs/testBackground.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -55,6 +64,8 @@ body {
 .partners {
 	padding-top:30px; 
 	padding-bottom:50px; 
+	font-size: 16px;
+	color: #afaeae;
 	}
 .partnersItem {
 	padding: 15px; 
@@ -89,10 +100,6 @@ body {
 	height: 50%; 
 	width: 100%; 
 	}
-.flexslider {
-	controlNav: false; 
-	}
-
 .userItems {
 	padding-top: 80px; 
 	}
@@ -100,5 +107,15 @@ footer {
 	padding: 100px; 
 	}
 .navbar-default {
-	background-color:rgba(89,123,98,0.60);
+	background-color:rgba(89,123,98,0.10); 
 	}
+.nav.navbar-nav.navbar-right li a {
+    color: #ffffff;
+	font-family: montserrat, sans-serif; 
+	font-style: bold; 
+	font-size: 18px;
+} 
+/*trying to change burger menu color ... will return to this ... */
+/*.navbar-default .navbar-header .navbar-toggle .icon-bar {
+	color: #ffffff;
+	}*/
