@@ -1,4 +1,21 @@
-<!doctype html>
+<!--
+*	Author:	YOUR	NAME
+*	Assignment:	Minor	Project	 - Ecoo by Team Skybound
+*	Student	ID:	
+*	Date	:	2014/01/25
+*	Ref:	website	link	to	code	referenced	or	the	book,	authors	name	and	page	number
+-->
+<!--Reused	Code	(e.g. JavaScript,	jQuery)	should	be	indicated	by	inline	comments	as	follows	where	they	
+are	only	a	segment	of	code	within	a	file,	if	the	full	file	then	provide	the	same	information	in	the	
+header	comments
+//Code	reuse	
+//	Ref:	http://www.site.com/page#ref
+//	Ref:	Book	Title,	Author,	Publisher,	Edition,	page	number
+// Ref:	Code	provided	by	lab	assistant:	name	or	fellow	participant:	name
+-->
+
+
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -24,7 +41,7 @@
 <script type="text/javascript" src="bootstrap/js/jquery-1.11.2.min.js"></script>
 <script src="woothemes-FlexSlider-8b3766e/jquery.flexslider.js"></script>
 
-<!-- Place in the <head>, after the three links -->
+<!-- Flexslider function - place in the <head>, after the three links -->
 <script type="text/javascript" charset="utf-8">
   $(window).load(function() {
     $('.flexslider').flexslider();
@@ -91,11 +108,11 @@
              
             <img src="imgs/repak.png"><img src="imgs/everyCan.png">
             <img src="imgs/keepCup.png"><img src="imgs/fairtrade.png">
-     </p>
+   </p>
 
     </div>
     
-    </div>
+    </div><!-- end of partners container-fluid -->
 </section>
 
 <section class="sliderRow" id="sliderRow">
@@ -105,9 +122,17 @@
       <div class="flexslider">
         <ul class="slides">
           <li><img src="imgs/slider1.jpg"/>
-          	<p class="flex-test">Test text for slider</p>
-            <p class="flex-test2">Another line of text
-            <br>A final line</p>
+          
+          	<div class="col-md-8 col-xs-12">
+           <p class="flex-text">Test text for slider.  
+           Ecco is an app designed to reward environmentally conscious consumer behaviour. 
+           There is a lot of text here...</p>
+          </div>
+          <div class="col-md-4"></div>
+          
+          
+            <!--<p class="flex-text2">Another line of text
+            <br>A final line</p>-->
             <!--<div class="flex-caption">
               <h2>Want to save the world? First Download the app.</h2>
             </div>-->
@@ -129,6 +154,44 @@
 </section>
 <!--end of slider section -->
 
+<!-- Benefits Section --> 
+<section class="benefits" id="benefits">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Check out the many Benefits of using Ecoo app</h2>
+           </div>
+           
+			<div class="row">
+            <div class="col-md-4 col-xs-12">
+			<ul class="benefitsList">
+				<li><span>Rent a Movie<img src="imgs/fairtrade.png"></span></li>
+              <li><span>Rent a Movie<img src="imgs/fairtrade.png"></span></li>
+              <li><span>Rent a Movie<img src="imgs/fairtrade.png"></span></li>
+              <li><span>Rent a Movie<img src="imgs/fairtrade.png"></span></li>
+              <li><span>Rent a Movie<img src="imgs/fairtrade.png"></span></li>
+           </ul>
+			</div>
+            <div class="col-md-4 benefitsPhone">
+            	<img src="imgs/placeholderPhone.jpg">
+            </div>
+            <div class="col-md-4 col-xs-12">
+			<ul class="benefitsList">
+				<li><span><img src="imgs/fairtrade.png">Rent a Movie</span></li>
+              <li><span><img src="imgs/fairtrade.png">Rent a Movie</span></li>
+              <li><span><img src="imgs/fairtrade.png">Rent a Movie</span></li>
+              <li><span><img src="imgs/fairtrade.png">Rent a Movie</span></li>
+              <li><span><img src="imgs/fairtrade.png">Rent a Movie</span></li>
+			</ul>
+
+            </div>
+            </div>
+
+</div>
+</div>
+</section>
+
+<!--user Stories section -->
 <section class="userStories" id="userStories">
   <div class="container">
     <div class="row">

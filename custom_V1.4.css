@@ -70,22 +70,11 @@ body {
 .partnersItem {
 	padding: 15px; 
 	}
-	
+
+/* FLEXSLIDER CSS */ 	
 /* flexslider caption settings source = http://stackoverflow.com
 /questions/15578312/flexslider-captions-showing-below-not-on-top-of-image*/
 
-/*.flexslider .slides li {
-    position:relative;
-}*/
-/*.flex-caption {
-    position: relative;
-    left:5;
-	right:5;
-	bottom:0;
-    background:rgba(0, 0, 0,0.6);
-    z-index:1;
-	padding:10px;
- }*/
 .flex-caption {
     position:absolute;
     left:0;
@@ -96,39 +85,65 @@ body {
     padding:5px;
 	color: #fff;
 }
-.flex-test {
+.flex-text {
 	color:rgba(203,42,45,1.00); 
 	bottom:250px;
-    font-size: 40px;
+    font-size: 16px;
 	font-family:montserrat, sans-serif; 
-    line-height: 350px;
+/*  line-height: 350px;*/
     left:0;
     padding:0 20px;
 	padding-left:100px;
     position:absolute;
     right:0;
     text-transform: uppercase;
-    /*z-index:1;*/
-	}
-.flex-test2 {
-	color:#ffffff; 
-	bottom:50px;
-    font-size: 40px;
-	font-family:montserrat, sans-serif; 
-/*    line-height: 350px;
-*/    left:0;
-    padding:0 20px;
-	padding-left:100px;
-    position:absolute;
-    right:0;
-    text-transform: uppercase;
+	width: 75%; 
+	height: auto;
     /*z-index:1;*/
 	}
 	
+/* the markup for portrait and landscape smartphones and (min-device-width : 320px) 
+and (max-device-width : 480px)*/
+@media only screen and (max-width:800px) {
+	.flex-text {
+		color:#ffffff; 
+		}
+	/* dimensions for iphone fixed width */
+	.flexslider {
+		/*width: 310px; 
+		height: 352px;*/
+		width: 50%; 
+		height: auto;  
+		}
+	}
 .flex-viewport {
 	height: 50%; 
 	width: 100%; 
 	}
+/* BENEFITS SECTION */ 
+.benefits {
+	color:#afaeae; 
+	text-align: center; 
+	}	
+.benefitsList {
+	list-style-type: none;
+	margin:0 auto;
+	padding:0; 
+	}
+@media only screen and (max-width:1000px) {
+	.benefitsList {
+		
+		}
+	.benefitsList li {
+		display:inline;
+		float:left; 
+		color: red; 
+		}
+	 .benefitsPhone {
+		 display: none;
+		 }
+	}
+	
 .userItems {
 	padding-top: 80px; 
 	}
