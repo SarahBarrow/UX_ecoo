@@ -11,22 +11,23 @@ body {
 .container {
 	max-width: 970px; 
 	}
-.content{
-	background-color:#ffffff;
-	text-align: center; 
+	
+/* NAV BAR */ 
+.navbar-default {
+	background-color:rgba(89,123,98,0.10); 
 	}
-/*.content img {
-	width: 100%;
+.nav.navbar-nav.navbar-right li a {
+    color: #ffffff;
+	font-family: montserrat, sans-serif; 
+	font-style: bold; 
+	font-size: 18px;
+}
+/*trying to change burger menu color ... will return to this ... */
+/*.navbar-default .navbar-header .navbar-toggle .icon-bar {
+	color: #ffffff;
 	}*/
-.test {
-/*	width: 1100px;*/ 
-	background-color:#ffffff;
-	}
-.test img{
-/*	max-width: none; */
-/*	height: auto; 
-	width: 70px; 
-*/	}
+	
+/*   Header / Landing page css */  
 .header {
     display: table;
     position: relative;
@@ -40,15 +41,7 @@ body {
 	color: #ffffff;
 	text-shadow: 3px 3px 2px #93A396;
 }
-.userStories{
-	width: 100%;
-	height: auto !important;
-	background: url(imgs/fotolia_64285595.jpg) no-repeat center center scroll;
-	background-size: cover;
-	color:#ffffff;
-	text-align: center;
-	padding-top: 30px; 
-	}
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -64,6 +57,8 @@ body {
 .about{
 	padding-top: 30px; 
 	}
+	
+/* PARTNERS SECTION logo row  */ 
 .partners {
 	padding-top:30px; 
 	padding-bottom:50px; 
@@ -73,9 +68,9 @@ body {
 .partnersItem {
 	padding: 15px; 
 	}
-/*#partners img {
-	width: 100%;
-	}*/
+#partners img {
+	padding: 10px; 
+	}
 
 /* FLEXSLIDER CSS */ 	
 /* flexslider caption settings source = http://stackoverflow.com
@@ -96,7 +91,6 @@ body {
 	bottom:250px;
     font-size: 16px;
 	font-family:montserrat, sans-serif; 
-/*  line-height: 350px;*/
     left:0;
     padding:0 20px;
 	padding-left:100px;
@@ -105,27 +99,30 @@ body {
     text-transform: uppercase;
 	width: 75%; 
 	height: auto;
+	/*  line-height: 350px;*/
     /*z-index:1;*/
 	}
 	
-/* the markup for portrait and landscape smartphones and (min-device-width : 320px) 
-and (max-device-width : 480px)*/
-@media only screen and (max-width:800px) {
+/* Make the FLEXSLIDER FULL SCREEN on smartphones */
+@media only screen and (max-width:320px) {
 	.flex-text {
 		color:#ffffff; 
 		}
 	/* dimensions for iphone fixed width */
 	.flexslider {
-		/*width: 310px; 
-		height: 352px;*/
-		width: 50%; 
-		height: auto;  
+		height: 480px;
+		width: 200%;  
+		overflow: hidden; 
+		}
+	.flexslider .slides img {
+			height: 468px;  
+			width:auto; 
+			}
+	.flex-active-slide {
+		width: 200%; 
 		}
 	}
-.flex-viewport {
-	height: 50%; 
-	width: 100%; 
-	}
+
 /* BENEFITS SECTION */ 
 .benefits {
 	color:#afaeae; 
@@ -136,10 +133,9 @@ and (max-device-width : 480px)*/
 	margin:0 auto;
 	padding:0; 
 	}
+	
+/* make the phone image disappear and the list layout rearrange on small screens */ 
 @media only screen and (max-width:1000px) {
-	.benefitsList {
-		
-		}
 	.benefitsList li {
 		display:inline;
 		float:left; 
@@ -149,23 +145,22 @@ and (max-device-width : 480px)*/
 		 display: none;
 		 }
 	}
-	
+
+/* thumbnail css */ 
+.userStories{
+	width: 100%;
+	height: auto !important;
+	background: url(imgs/fotolia_64285595.jpg) no-repeat center center scroll;
+	background-size: cover;
+	color:#ffffff;
+	text-align: center;
+	padding-top: 30px; 
+	}
 .userItems {
 	padding-top: 80px; 
 	}
 footer {
 	padding: 100px; 
 	}
-.navbar-default {
-	background-color:rgba(89,123,98,0.10); 
-	}
-.nav.navbar-nav.navbar-right li a {
-    color: #ffffff;
-	font-family: montserrat, sans-serif; 
-	font-style: bold; 
-	font-size: 18px;
-} 
-/*trying to change burger menu color ... will return to this ... */
-/*.navbar-default .navbar-header .navbar-toggle .icon-bar {
-	color: #ffffff;
-	}*/
+
+
