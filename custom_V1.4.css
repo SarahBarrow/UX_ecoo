@@ -33,27 +33,43 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    background:url(imgs/testBackground.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+    background:url(imgs/FirstPageBG.jpg) no-repeat center center scroll;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover; 
     -o-background-size: cover;
 	color: #ffffff;
-	text-shadow: 3px 3px 2px #93A396;
-}
-
-.text-vertical-center {
-    display: table-cell;
-    text-align: center;
-	vertical-align: middle;
-}
-.text-vertical-center h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
-	 color: #ffffff;
-}
+	}
+.headText {
+	position: relative;
+	padding-top: 10%;
+	padding-left: 20%; 
+	}
+.dlButton {
+	position: absolute;
+	padding-top: 25%;
+	padding-left: 20%; 
+	}
+/* reposition download buttons for smaller screens */ 
+@media only screen and (max-width: 900px) {
+	.headText {
+	position: relative;
+	padding-top: 28%;
+	padding-left: 20%;
+	}
+	.headText h2{
+		font-size: 22px; 
+		}
+	.dlButton {
+		display: block; 
+		margin-bottom: 5px; 
+		padding-top: 10%; 
+		}
+	.dlButton img {
+		margin-bottom: 8px;
+		}
+	}	
+	
 .about{
 	padding-top: 30px; 
 	}
@@ -124,8 +140,17 @@ body {
 	}
 
 /* BENEFITS SECTION */ 
+#benefits {
+    background:url(imgs/page5Background.jpg) no-repeat center center scroll;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover; 
+    -o-background-size: cover;
+	color: #ffffff;
+	padding: 80px 0 80px 0;
+	}
 .benefits {
-	color:#afaeae; 
+	color:#FFFFFF; 
 	text-align: center; 
 	}	
 .benefitsList {
@@ -133,9 +158,13 @@ body {
 	margin:0 auto;
 	padding:0; 
 	}
+.benefitsList img {
+	margin-bottom: 5px; 
+	}
+
 	
 /* make the phone image disappear and the list layout rearrange on small screens */ 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:800px) {
 	.benefitsList li {
 		display:inline;
 		float:left; 
@@ -144,6 +173,24 @@ body {
 	 .benefitsPhone {
 		 display: none;
 		 }
+/*	 .benefitsList img {
+		padding-right: 8px;
+		padding-left: 5px; 
+	}*/
+	}
+@media only screen and (min-device-width:320px) and (max-device-width : 360px) {
+	.benefitsList li {
+		display:inline;
+		float:left; 
+		color: blue; 
+		}
+	 .benefitsPhone {
+		 display: none;
+		 }
+	 .benefitsList img {
+		padding-right: 20px;
+		padding-left: 10px; 
+	}
 	}
 
 /* thumbnail css */ 
