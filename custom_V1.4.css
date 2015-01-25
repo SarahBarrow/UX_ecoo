@@ -22,20 +22,8 @@ body {
     color: #ffffff;
 	font-family: montserrat, sans-serif; 
 	font-style: bold; 
-	font-size: 18px;
 	padding-top: 30px; 
 }
-.navbar-brand {
-
-	padding-bottom: 80px; 
-	}
-.navbar-header {
-	padding-top: -30px; 
-	}
-/*trying to change burger menu color ... will return to this ... */
-/*.navbar-default .navbar-header .navbar-toggle .icon-bar {
-	color: #ffffff;
-	}*/
 	
 /*   Header / Landing page css */  
 .header {
@@ -88,18 +76,19 @@ body {
 /* thumbnail css */ 
 .partnerStories{
 	width: 100%;
-	height: auto !important;
-	background:url(imgs/page5Background.jpg) no-repeat center center scroll;
-	background-size: cover;
+	background-color: #30b5aa; 
 	color:#ffffff;
 	text-align: center;
 	padding-top: 30px; 
 	padding-bottom: 30px; 
+	font-size: 1.5em; 
+	padding-bottom: 50px; 
+/*	this to be used when a background image is applied */	
+/*	height: auto !important;*/
 	}
 .partnerItems {
 	padding-top: 80px; 
 	}
-
 .partners {
 	padding-top:30px; 
 	padding-bottom:50px; 
@@ -113,42 +102,56 @@ body {
 	padding: 10px; 
 	}
 
+/* USER STORIES SECTION */ 
+/* PARTNERS SECTION logo row  */ 
+/* thumbnail css */ 
+.userStories{
+	width: 100%;
+	height: auto !important;
+	background:url(imgs/page5Background.jpg) no-repeat center center scroll;
+	background-size: cover;
+	color:#ffffff;
+	text-align: center;
+	padding-top: 80px; 
+	padding-bottom: 30px; 
+	}
+.userItems {
+	padding-top: 85px; 
+	}
+.users {
+	padding-top:30px; 
+	padding-bottom:50px; 
+	font-size: 16px;
+	color: #afaeae;
+	}
+.usersItem {
+	padding: 15px; 
+	}
+#userStories img {
+	padding: 10px; 
+	}
+
 /* FLEXSLIDER CSS */ 	
 /* flexslider caption settings source = http://stackoverflow.com
 /questions/15578312/flexslider-captions-showing-below-not-on-top-of-image*/
 
-.flex-caption {
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    background: rgba(255,255,255,0.40);      
-    z-index:1;
-    padding:5px;
-	color: #fff;
-}
 .flex-text {
-	color:rgba(203,42,45,1.00); 
-	bottom:250px;
-    font-size: 16px;
-	font-family:montserrat, sans-serif; 
-    left:0;
-    padding:0 20px;
-	padding-left:100px;
-    position:absolute;
-    right:0;
-    text-transform: uppercase;
-	width: 75%; 
-	height: auto;
-	/*  line-height: 350px;*/
-    /*z-index:1;*/
+		color: #ffffff; 
+		bottom:250px;
+		font-size: 16px;
+		font-family:montserrat, sans-serif; 
+		left:0;
+		padding:0 20px;
+		padding-left:100px;
+		position:absolute;
+		right:0;
+		text-transform: uppercase;
+		width: 75%; 
+		height: auto;
 	}
 	
 /* Make the FLEXSLIDER FULL SCREEN on smartphones */
-@media only screen and (max-width:320px) {
-	.flex-text {
-		color:#ffffff; 
-		}
+@media only screen and (max-width:360px) {
 	/* dimensions for iphone fixed width */
 	.flexslider {
 		height: 480px;
@@ -157,7 +160,7 @@ body {
 		}
 	.flexslider .slides img {
 			height: 468px;  
-			width:auto; 
+			width: auto; 
 			}
 	.flex-active-slide {
 		width: 200%; 
@@ -173,6 +176,10 @@ body {
     -o-background-size: cover;
 	color: #ffffff;
 	padding: 80px 0 80px 0;
+	font-family: monserrat, sans-serif; 
+	}
+#benefits h2 {
+	padding-bottom: 15px; 
 	}
 .benefits {
 	color:#FFFFFF; 
@@ -182,32 +189,36 @@ body {
 	list-style-type: none;
 	margin:0 auto;
 	padding:0; 
+	font-size: 20px;  
+	}
+.benefitsList a{
+	color: #ffffff;
+	}
+.left {
+	text-align: right;
+	}
+.right {
+	text-align: left; 
 	}
 .benefitsList img {
-	margin-bottom: 5px; 
+	margin: 8px;
 	}
 
 	
 /* make the phone image disappear and the list layout rearrange on small screens */ 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:1000px) {
 	.benefitsList li {
-		display:inline;
-		float:left; 
-		color: red; 
+		display:inline-block;
 		}
 	 .benefitsPhone {
 		 display: none;
-		 }
-/*	 .benefitsList img {
-		padding-right: 8px;
-		padding-left: 5px; 
-	}*/
+		 } 
 	}
 @media only screen and (min-device-width:320px) and (max-device-width : 360px) {
 	.benefitsList li {
 		display:inline;
 		float:left; 
-		color: blue; 
+		font-size: 0.8em; 
 		}
 	 .benefitsPhone {
 		 display: none;
@@ -215,6 +226,9 @@ body {
 	 .benefitsList img {
 		padding-right: 20px;
 		padding-left: 10px; 
+		}
+	  .left, .right {
+		text-align: center;
 	}
 	}
 
@@ -225,6 +239,13 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover; 
     -o-background-size: cover;
+	color: #ffffff;
+	}
+.map {
+	padding-top: 20px; 
+	}
+.form {
+	padding-top: 15px; 
 	}
 
 
