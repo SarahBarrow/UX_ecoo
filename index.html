@@ -1,18 +1,16 @@
 <!--
-*	Author:	YOUR	NAME
+*	Author:	Sarah Barrow 
 *	Assignment:	Minor	Project	 - Ecoo by Team Skybound
-*	Student	ID:	
+*	Student	ID:	D13126793
 *	Date	:	2014/01/25
-*	Ref:	website	link	to	code	referenced	or	the	book,	authors	name	and	page	number
+*	'Ref' indicates code sourced from third parties. 
 -->
-<!--Reused	Code	(e.g. JavaScript,	jQuery)	should	be	indicated	by	inline	comments	as	follows	where	they	
-are	only	a	segment	of	code	within	a	file,	if	the	full	file	then	provide	the	same	information	in	the	
-header	comments
+<!--
 //Code	reuse	
-//	Ref:	http://www.site.com/page#ref
+//	Ref:	scrolling-nav.js 
+// REF: source https://github.com/IronSummitMedia/startbootstrap-scrolling-nav/blob/gh-pages/index.html
 //	Ref:	Book	Title,	Author,	Publisher,	Edition,	page	number
-// Ref:	Code	provided	by	lab	assistant:	name	or	fellow	participant:	name
--->
+//  Fellow	participant:	Robert Challeron -->
 
 
 <!DOCTYPE html>
@@ -24,22 +22,21 @@ header	comments
 <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 <link type="text/css" rel="stylesheet" href="custom_V1.4.css">
 
+<!-- Ref: the following line (line 25) added by fellow participant Killian Merrins (design) --> 
+<link rel="icon" type="image/png" href="imgs/ecooicon.png">
 
-  <link rel="icon"
-        type="image/png"
-        href="imgs/ecooicon.png">
 <!-- Adobe Edge Fonts -->
 <script src="http://use.edgefonts.net/montserrat;open-sans.js"></script>
 
 <!-- Custom CSS for scrolling nav scrollspy -->
-<!-- source https://github.com/IronSummitMedia/startbootstrap-scrolling-nav/blob/gh-pages/index.html-->
+<!-- REF: source https://github.com/IronSummitMedia/startbootstrap-scrolling-nav/blob/gh-pages/index.html-->
 <link href="bootstrap/css/scrolling-nav.css" rel="stylesheet">
 
 <!-- style for fontawesome-->
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel='stylesheet'/>
 
-<!-- Flexslider style and javascript -->
+<!-- Ref: Flexslider by Woothemes style and javascript -->
 <link rel="stylesheet" href="woothemes-FlexSlider-8b3766e/flexslider.css" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/jquery-1.11.2.min.js"></script>
@@ -50,28 +47,35 @@ header	comments
   $(window).load(function() {
     $('.flexslider').flexslider();
   })
-  
+<!-- scrollspy call - part of navbar animation -->  
   $('body').scrollspy({ target: '.navbar' })
+  
 </script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar">
-<nav class="navbar navbar-default navbar-fixed-top">
+<body id="top-head" data-spy="scroll" data-target=".navbar">
+
+<!-- Navbar --> 
+<nav class="navbar navbar-default navbar-fixed-top" role="naviagtion">
   <div class="container-fluid"> 
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand page-scroll" href="#top-head"> <img alt="Brand" src="imgs/75pxLogo.png"> </a> </div>
+    <div class="navbar-header page-scroll">
+      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+      	<span class="sr-only">Toggle navigation</span> 
+      	<span class="icon-bar"></span> 
+      	<span class="icon-bar"></span> 
+      	<span class="icon-bar"></span> </button>
+      <a class="navbar-brand page-scroll" href="#top-head"> <img alt="Brand" src="imgs/Logo56x28.png" title="Ecoo logo"> </a> </div>
     
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="#bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
         <li class="hidden"><a class="page-scroll" href="#top-head"></a></li>
         <li><a class="page-scroll" href="#sliderRow">How Ecoo Works</a></li>
         <li><a class="page-scroll" href="#benefits">Benefits</a></li>
-        <!--<li><a class="page-scroll" href="#partnerStories">Partners</a></li>-->
-        <li><a class="page-scroll" href="#partnerStories">User Stories</a></li>
+        <li><a class="page-scroll" href="#partnerStories">Partners</a></li>
+        <li><a class="page-scroll" href="#userStories">User Stories</a></li>
         <li><a class="page-scroll" href="#footer">Contact</a></li>
       </ul>
     </div>
@@ -79,25 +83,26 @@ header	comments
   </div>
   <!-- /.container-fluid --> 
 </nav>
+
+<!-- header --> 
 <header class="header" id="top-head">
 <div class="container-fluid">
 	<div class="row">
-    	<div class="col-md-12">
-        	
+    	<div class="col-md-12">  	
             <div class="col-md-6"></div>
-            <div class="col-md-6 col-md-offset-3 headText">            
-            <h2>Download Now</h2>
-           <p><img src="imgs/downloadUnderline.png"></p>
-           <p>Use your smartphone to earn credits and rewards while helping to improve the environment. Ecoo
-             encourages earth-friendly behaviours.</p>
-           </div>
-           </div>
-          
-           <div class="row dlButton">
+                <div class="col-md-6 col-md-offset-3 headText">            
+                    <h2>Download Now</h2>
+                       <p><img src="imgs/downloadUnderline.png"></p>
+                       <p>Use your smartphone to earn credits and rewards while helping to improve the environment. Ecoo
+                         encourages earth-friendly behaviours.</p>
+                </div>
+         </div>  
+         <div class="row dlButton">
            	<div class="col-md-6 col-xs-12"></div>
            	<div class="col-md-3 col-sm-3 col-sm-offset-0 col-xs-offset-1 col-xs-6"><a href="imgs/appledownload.png" role="button"><img class="img-responsive" src="imgs/appledownload.png"></a></div>
-            	<div class="col-md-3 col-sm-3 col-sm-offset-0 col-xs-offset-1 col-xs-6"><a href="imgs/appledownload.png" role="button"><img class="img-responsive" src="imgs/appledownload.png"></a></div>
-           </div>
+            	<!-- use apple download button as placeholder until googleplay graphic is ready -->
+               <div class="col-md-3 col-sm-3 col-sm-offset-0 col-xs-offset-1 col-xs-6"><a href="imgs/appledownload.png" role="button"><img class="img-responsive" src="imgs/appledownload.png"></a></div>
+         </div>
     </div>
 </div>
 </header>
@@ -106,43 +111,39 @@ header	comments
 <section class="partners" id="partners">
 	<div class="container-fluid">	
     <div class="row">  
-    		<div class="col-md-2 col-sm-12 col-xs-12 text-center"><h4>Our Partners</h4></div>
-    		<div class="col-md-1 col-sm-2 col-xs-3">  <img src="imgs/70px Partners - All Logos 70px wide/dart.png"></div> 
-            <div class="col-md-1 col-sm-2 col-xs-3">   <img src="imgs/70px Partners - All Logos 70px wide/dublinBus.png"></div> 
-             <div class="col-md-1 col-sm-2 col-xs-3">  <img src="imgs/70px Partners - All Logos 70px wide/everyCan.png"></div> 
-            <div class="col-md-1 col-sm-2 col-xs-3">  <img src="imgs/70px Partners - All Logos 70px wide/fairtrade.png"></div> 
-            <div class="col-md-1 col-sm-2 col-xs-3">  <img src="imgs/70px Partners - All Logos 70px wide/keepCup.png"></div> 
-		 	 <div class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-3">  <img src="imgs/70px Partners - All Logos 70px wide/luas.png"> </div> 
-            <div class="col-md-1 col-sm-2 col-xs-3">  <img src="imgs/70px Partners - All Logos 70px wide/originGreen.png"></div> 
-            <div class="col-md-1 col-sm-2 col-xs-3">  <img src="imgs/70px Partners - All Logos 70px wide/repak.png"></div> 
-            <div class="col-md-1 col-sm-offset-0 col-sm-2 col-xs-3 col-xs-offset-2">  <img src="imgs/70px Partners - All Logos 70px wide/supervalu.png"></div> 
-            <div class="col-md-1 col-sm-offset-0 col-sm-2 col-xs-3 col-xs-offset-2">  <img src="imgs/70px Partners - All Logos 70px wide/tesco.png"></div>  
+    		 <div class="col-md-2 col-sm-12 col-xs-12 text-center"><h4>Our Partners</h4></div>
+    		 <div class="col-md-1 col-sm-2 col-xs-3">  <img src="imgs/70px Partners - All Logos 70px wide/dart.png" alt="partner logo" title="partner logo"></div> 
+            <div class="col-md-1 col-sm-2 col-xs-3">   <img src="imgs/70px Partners - All Logos 70px wide/dublinBus.png" alt="partner logo" title="partner logo"></div> 
+            <div class="col-md-1 col-sm-2 col-xs-3">  <img src="imgs/70px Partners - All Logos 70px wide/everyCan.png" alt="partner logo" title="partner logo"></div> 
+            <div class="col-md-1 col-sm-2 col-xs-3">  <img src="imgs/70px Partners - All Logos 70px wide/fairtrade.png" alt="partner logo" title="partner logo"></div> 
+            <div class="col-md-1 col-sm-2 col-xs-3">  <img src="imgs/70px Partners - All Logos 70px wide/keepCup.png" alt="partner logo" title="partner logo"></div> 
+		 	 <div class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-3">  <img src="imgs/70px Partners - All Logos 70px wide/luas.png" alt="partner logo" title="partner logo"> </div> 
+            <div class="col-md-1 col-sm-2 col-xs-3">  <img src="imgs/70px Partners - All Logos 70px wide/originGreen.png" alt="partner logo" title="partner logo"></div> 
+            <div class="col-md-1 col-sm-2 col-xs-3">  <img src="imgs/70px Partners - All Logos 70px wide/repak.png" alt="partner logo" title="partner logo"></div> 
+            <div class="col-md-1 col-sm-offset-0 col-sm-2 col-xs-3 col-xs-offset-2">  <img src="imgs/70px Partners - All Logos 70px wide/supervalu.png" alt="partner logo" title="partner logo"></div> 
+            <div class="col-md-1 col-sm-offset-0 col-sm-2 col-xs-3 col-xs-offset-2">  <img src="imgs/70px Partners - All Logos 70px wide/tesco.png" alt="partner logo" title="partner logo"></div>  
     </div><!-- end of partners container-fluid -->
 </section><!-- end of Partners Logo Section --> 
 
-<!-- FLEXSLIDER by Woothemes -->
+<!--Ref:  FLEXSLIDER by Woothemes -->
 <section class="sliderRow" id="sliderRow">
   <div class="row">
     <div class="col-md-12 col-sm-12"> 
       <div class="flexslider">
         <ul class="slides">
-          <li><img src="imgs/slider1.jpg"/>
-          
-          	<div class="col-md-8 col-xs-6">
-           <p class="flex-text">  
-           Ecco is an app designed to reward environmentally conscious consumer behaviour. 
-           There is a lot of text here...</p>
-          </div>
-          <div class="col-md-4"></div>
+          <li><img src="imgs/slider1.jpg" alt="green background 1"/>
+               <div class="col-md-8 col-xs-6">
+               	<p class="flex-text">More than half of us believe we could do more to help the environment. </p>
+              </div>
           </li>
-          <li> <img src="imgs/slider2.jpg" />
-            <div class="flex-caption">
-              <h2>have a coffee and think about it</h2>
+          <li> <img src="imgs/slider2.jpg"  alt="green background 2" />
+            <div class="col-md-8 col-xs-6">
+             	<p class="flex-text"> But most of us find it hard to shop in an eco-friendly way. </p>
             </div>
           </li>
-          <li><img src="imgs/slider1.jpg"/>
-            <div class="flex-caption">
-              <h2>Be proud of what you've done.</h2>
+          <li><img src="imgs/slider1.jpg"  alt="green background 3"/>
+            <div class="col-md-8 col-xs-6">
+             	<p class="flex-text"> 80% of us want to shop in an eco-friendly way. Here's how ... </p>
             </div>
           </li>
         </ul>
@@ -157,40 +158,100 @@ header	comments
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="col-md-12">
-				<h2>Check out the many Benefits of using Ecoo app</h2>
+				<h2>Check out the many benefits of using Ecoo app</h2>
            </div>
-           
 			<div class="row-fluid">
             <div class="col-md-4 col-xs-6">
-			<ul class="benefitsList">
-				<li><span>Movie Nights<img src="imgs/cinemaTicketicon copy.png"></span></li>
-              <li><span><img src="imgs/trophyicon copy.png"></span></li>
-              <li><span><img src="imgs/FineDiningicon copy.png"></span></li>
-              <li><span><img src="imgs/weekendsAwayicon copy.png"></span></li>
-              <li><span><img src="imgs/shoppingVouchersicon copy.png"></span></li>
-           </ul>
+                <ul class="benefitsList left">
+                    <li><a href="#benefits"><span>Movie Nights<img src="imgs/movieticketicon70.png" alt="movie icon" title="movie icon"></span></a></li>
+                  <li><a href="#benefits"><span>Feeling Lucky<img src="imgs/trophyicon70.png" alt="trophy" title="trophy icon"></span></a></li>
+                  <li><a href="#benefits"><span>Fine  Dining<img src="imgs/FineDiningicon70.png" alt="dining icon" title="dining icon"></span></a></li>
+                  <li><a href="#benefits"><span>Weekend Away<img src="imgs/euroicon70.png" alt="euro symbol" title="euro"></span></a></li>
+                  <li><a href="#benefits"><span>Shop & Save<img src="imgs/shoppingVouchersicon70.png" alt="shopping icon" title="shopping icon"></span></a></li>
+               </ul>
 			</div>
-            <div class="col-md-4 benefitsPhone">
-            	<img src="imgs/placeholderPhone.jpg">
-            </div>
+           <div class="col-md-4 benefitsPhone">
+            	<img src="imgs/phone400h.png" alt="iphone" title="iphone image">
+           </div>
             <div class="col-md-4 col-xs-6">
-			<ul class="benefitsList">
-				<li><span><img src="imgs/Glassicon copy.png">Enjoy Drinks</span></li>
-              <li><span><img src="imgs/coffeeicon copy.png">Great Coffee</span></li>
-              <li><span><img src="imgs/euroicon copy.png">Cash Back</span></li>
-              <li><span><img src="imgs/mobileicon copy.png">Win Mobile</span></li>
-              <li><span><img src="imgs/bikeicon copy.png">Bike to Work</span></li>
-			</ul>
-
+                <ul class="benefitsList right">
+                  <li><a href="#benefits"><span><img src="imgs/Glassicon70.png" alt="glass" title="glass icon"/>Enjoy Drinks</span></a></li>
+                  <li><a href="#benefits"><span><img src="imgs/coffeeicon70.png" alt="coffee" title="coffee icon"/>Great Coffee</span></a></li>
+                  <li><a href="#benefits"><span><img src="imgs/euroicon70.png" alt="euro" title="euro icon"/>Cash Back</span></a></li>
+                  <li><a href="#benefits"><span><img src="imgs/mobilephoneicon70.png" alt="mobile" title="miobile icon"/>Win Mobile</span></a></li>
+                  <li><a href="#benefits"><span><img src="imgs/bikeicon70.png" alt="bike" title="bike icon">Bike to Work</span></a></li>
+                </ul>
             </div>
-            </div>
-
-</div>
-</div> 
+           </div>
+        </div>
+	</div> 
 </section><!-- end of benefits section--> 
 
-<!--user Stories section -->
+<!-- parnters section --> 
 <section class="partnerStories" id="partnerStories">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12"> 
+       <h2>Ecoo Partners</h2>
+         <hr class="small">
+          <p>There are lots of ways of using your Ecoo app with our partners today.</p>  
+        <div class="row">
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="partnerItems">
+              <div class="thumbnail"> <img class="img-responsive" src="imgs/Biofuelsimg.jpg" alt="fuel logo">
+                </div>
+              </div>
+            </div>
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="partnerItems">
+              <div class="thumbnail"> <img class="img-responsive" src="imgs/buseireannimg.jpg" alt="Bus Eireann">
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="partnerItems">
+              <div class="thumbnail"> <img class="img-responsive" src="imgs/dublinBike.jpg" alt="Dublin Bike">
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="partnerItems">
+              <div class="thumbnail"> <img class="img-responsive" src="imgs/eireannrod.jpg" alt="Iaranrod Eireann">
+              </div>
+            </div>
+          </div>    
+        </div><!-- end of thumbnail row 1 -->
+        <!--partners row 2--> 
+        <div class="row">
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="partnerItems">
+              <div class="thumbnail"> <img class="img-responsive" src="imgs/envirogreen.jpg" alt="Envirogreen">
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3  col-md-3">
+            <div class="partnerItems">
+              <div class="thumbnail"> <img class="img-responsive" src="imgs/freetradeimage.jpg" alt="Free Trade">
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="partnerItems">
+              <div class="thumbnail"> <img class="img-responsive" src="imgs/Repak.jpg" alt="repak">
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="partnerItems">
+              <div class="thumbnail"> <img class="img-responsive" src="imgs/weeeimg.jpg" alt="WEEE">
+              </div>
+            </div>
+          </div>      
+        </div><!-- end of thumbnail row 2 -->   
+</section> <!-- end of partners section--> 
+
+<!--user Stories section -->
+<section class="userStories" id="userStories">
   <div class="container">
     <div class="row">
       <div class="col-xs-12"> 
@@ -200,67 +261,65 @@ header	comments
           the environmentally aware mobile application.</p>  
         <div class="row">
           <div class="col-xs-6 col-md-3">
-            <div class="partnerItems">
-              <div class="thumbnail"> <img class="img-responsive" src="imgs/face1.jpg" alt="...">
+            <div class="userItems">
+              <div class="thumbnail"> <img class="img-responsive" src="imgs/face1.jpg" alt="user photo" title="user picture">
                 <div class="caption">
-                  <h3>Josh's Story</h3>
-                  <p>Taking the bus to work is necessary evil, but I never thought I could make eco-friendly. </p>
-                  <p><a href="#" class="btn btn-primary" role="button">Read More</a> 
+                  <h3>Josh's Ecoo</h3>
+                  <p>"Commuting to work is a necessity, but now it's so much more eco-friendly."</p>
+                  <p><a href="userStories" class="btn btn-primary" role="button">Read More</a> 
                 </div>
               </div>
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
-            <div class="partnerItems">
-              <div class="thumbnail"> <img class="img-responsive" src="imgs/face2.jpg" alt="...">
+            <div class="userItems">
+              <div class="thumbnail"> <img class="img-responsive" src="imgs/face2.jpg" alt="user photo" title="user picture">
                 <div class="caption">
-                  <h3>Emily's Story</h3>
-                  <p>It's so hard to make the right decisions when shopping. Ecoo takes all the worry out of the daily chore. </p>
-                  <p><a href="#" class="btn btn-primary" role="button">Read More</a> 
+                  <h3>Emily's Ecoo</h3>
+                  <p>"With the Ecoo it' so much easier to make the right decisions when shopping." </p>
+                  <p><a href="userStories" class="btn btn-primary" role="button">Read More</a> 
                 </div>
               </div>
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
-            <div class="partnerItems">
-              <div class="thumbnail"> <img class="img-responsive" src="imgs/face3.jpg" alt="...">
+            <div class="userItems">
+              <div class="thumbnail"> <img class="img-responsive" src="imgs/face3.jpg" alt="user photo" title="user picture">
                 <div class="caption">
-                  <h3>Emma's Story</h3>
-                  <p>Holidays. Love them. The next time, we promised to make them even better - for us and for environment. </p>
-                  <p><a href="#" class="btn btn-primary" role="button">Read More</a> 
+                  <h3>Emma's Ecoo</h3>
+                  <p>"Love holidays? Ecoo makes them even better for us and for environment." </p>
+                  <p><a href="userStories" class="btn btn-primary" role="button">Read More</a> 
                 </div>
               </div>
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
-            <div class="partnerItems">
-              <div class="thumbnail"> <img class="img-responsive" src="imgs/face4.jpg" alt="...">
+            <div class="userItems">
+              <div class="thumbnail"> <img class="img-responsive" src="imgs/face4.jpg" alt="user photo" title="user picture">
                 <div class="caption">
                   <h3>Andy's Ecoo</h3>
-                  <p>Taking the bus to work is necessary evil, but I never thought I could make eco-friendly. </p>
-                  <p><a href="#" class="btn btn-primary" role="button">Read More</a> 
+                  <p>"I use it buying coffee, books, lunch; all day long I find a way to Ecoo. " </p>
+                  <p><a href="userStories" class="btn btn-primary" role="button">Read More</a> 
                 </div>
               </div>
             </div>
-          </div>
-          
-        </div>
-        <!-- end of thumbnail row 1 --> 
-        
-        
+          </div>       
+        </div>  <!-- end of thumbnail row 1 -->   
       </div>
     </div>
   </div>
 </section>
 <!-- end of user stories section --> 
 
-<!-- FOOTER ... almost there -->
-<div id="footer">
-    <div class="container">
+<!-- FOOTER ... almost there! -->
+<footer id="footer">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-10 col-sm-10 col-lg-offset-1 text-left">
+         <!-- Contact information for Ecoo Product -->   
 
-
+        <div class="col-lg-5 col-md-5 col-sm-12 text-left">
+<!--REF: some code snippets here by Robert Challeron, team member --> 
+<!--REF: form by Robert Challeron, team member  --> 
             <h2>Contact Us</h2>
             <p>Please feel free if you have any enquiries how to get involved. If you are interested in your business becoming a partner with the ECOO scheme
                 then we would love to hear from you.<p>
@@ -272,24 +331,35 @@ header	comments
                 Tel:01-4806244<br>
                 Email: info@digitalskillsacademy.com
             </p>
-
+            <!--form for submiting questions to the Ecoo team -->
             <form action="question.php">
+			 </div>
+             <!--iframe map to be included here --> 
+             <div class="col-lg-4 col-md-4 col-sm-12 map"><img class="img-responsive" src="imgs/map.png" alt="map" title="map to Ecoo office"></div>
+             
+         <div class="col-lg-3 col-md-3 col-sm-12">
+            	<form action="question.php">
                 Name:<br>
                 <input type="text" value="Name">
                 <br>Question:<br>
                 <textarea rows="4" cols="50" name="comment" form="question">Enter question here...</textarea>
                 <input type="submit" value="Submit"></p>
             </form>
+            <!--Links to our social media-->
+            	</form>
             <h4>Social Media</h4>
-            <p>
+            	<p>
                 <a href="http://www.facebook.com/ECOOcurrency" target="_blank"><img src="imgs/facebookicon.png"/></a>
                 <a href="http://www.twitter.com/ECOOCurrency" target="_blank"><img src="imgs/twittericon.png"/></a>
-      	    </p>	
-            
+      	    </p>
+            </div>
         </div>
+      	    	</p>	
+        </div>   
      </div>
   </div>
-</footer>
+</div>
+
 
 <!-- CALL JavaScript --> 
 <script language="javascript" type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> 
