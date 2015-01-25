@@ -12,9 +12,9 @@ body {
 	max-width: 970px; 
 	}
 	
-/* NAV BAR */
+/* NAV BAR */ 
 .navbar-default {
-	background-color:rgba(89,123,98,0.10);
+	background-color:rgba(89,123,98,0.10); 
 	text-transform: uppercase;
 /*	padding-top: 75px; */
 	}
@@ -22,20 +22,8 @@ body {
     color: #ffffff;
 	font-family: montserrat, sans-serif; 
 	font-style: bold; 
-	font-size: 18px;
 	padding-top: 30px; 
 }
-.navbar-brand {
-
-	padding-bottom: 80px; 
-	}
-.navbar-header {
-	padding-top: -30px; 
-	}
-/*trying to change burger menu color ... will return to this ... */
-/*.navbar-default .navbar-header .navbar-toggle .icon-bar {
-	color: #ffffff;
-	}*/
 	
 /*   Header / Landing page css */  
 .header {
